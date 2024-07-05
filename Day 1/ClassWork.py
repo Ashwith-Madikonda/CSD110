@@ -48,9 +48,9 @@ print("Distance driven in miles:", distance_in_miles)
 
 
 # Operators
-print(13%3)
+print(13%3) #gives reminder
 print(13/3)
-print(13//3)
+print(13//3) #float division- rounds up to nearest value
 print(10*3)
 print(10**3)
 
