@@ -57,8 +57,8 @@ YELLOW = "yellow"
 
 
 #Taking inputs from user
-colour1 = input("Enter primary color 1 (primary colors are 'red','blue','green', enter in lower case letters only):  ")
-colour2 = input("Enter primary color 2 (primary colors are 'red','blue','green', enter in lower case letters only):  ")
+colour1 = input("Enter primary color 1 (primary colors are 'red','blue','yellow', enter in lower case letters only):  ")
+colour2 = input("Enter primary color 2 (primary colors are 'red','blue','yellow', enter in lower case letters only):  ")
 invalidColors = False
 if((colour1 != RED) and (colour1 != BLUE) and (colour1 != YELLOW)): #Validating color 1
     print("Error: Invalid Colour 1.")
