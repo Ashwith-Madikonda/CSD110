@@ -32,9 +32,12 @@ myNumbers[1] = myNumbers[1] + myNumbers[8]
 myNumbers[8] = myNumbers[1] - myNumbers[8]
 myNumbers[1] = myNumbers[1] - myNumbers[8]
 
-#insertion
+#swpping by insertioninsertion
 myNumbers.insert(2,33)
-myNumbers.insert(7,9)
+myNumbers.pop(3)
+myNumbers.insert(-2,9)
+myNumbers.pop(-2)
+
 
 
 print("After swap and insertion: ", myNumbers)

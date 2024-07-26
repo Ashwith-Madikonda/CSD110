@@ -41,18 +41,18 @@ def inputDietPlan(): #function definition
     average_percentage_decrease = int(input("Enter percentage to reduce calories: ")) #taking average daily percentage as input from user
     days = int(input("Enter number of days: ")) #taking numbers of days as input from user
 inputDietPlan() #function calling
-while(starting_daily_calorie < 1 or average_percentage_decrease < 1 or days < 1):
-    print("Invalid Inputs entered, please enter the details again \n")
-    inputDietPlan()
+while(starting_daily_calorie < 1 or average_percentage_decrease < 1 or days < 1): #checking validity of inputs
+    print("Invalid Inputs entered, please enter the details again. \n")
+    inputDietPlan() #recallinmg function when invalid inputs were given
 if(starting_daily_calorie > 1200):
     for i in range(0,days,1):
         print(f"Day {i+1}: {starting_daily_calorie} calories")
-        starting_daily_calorie = starting_daily_calorie - ((starting_daily_calorie * average_percentage_decrease)/100)
+        starting_daily_calorie = starting_daily_calorie - ((starting_daily_calorie * average_percentage_decrease)/100)#printing daily calories
         if(starting_daily_calorie < 1200):
-            print(f"Diet stabilized at day {i+2} with {starting_daily_calorie} calories (below 1200)")
+            print(f"Diet stabilized at day {i+2} with {starting_daily_calorie} calories (below 1200)")#printing diet stabilization message
             break
-        if(i == days and starting_daily_calorie > 1200):
-            print(f"Diet not stabilized not stabilized with this plan, please modify your plan")
+        if(i == days-1 and starting_daily_calorie > 1200):
+            print(f"Diet not stabilized not stabilized with this plan, please modify your plan") # message if diet is not stabilized in given days
 else:
     print("Diet is already stabilized")
 
