@@ -84,7 +84,7 @@
 #     def __init__(self):
 #         pass
 
-# #Mutiple level inheritence
+# #Mutiple  inheritence
 # class Manager(Person,Employee): #inherites Employee and Person
 #     def __init__(self):
 #         pass
